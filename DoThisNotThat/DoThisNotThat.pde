@@ -25,8 +25,7 @@ void mousePressed() {
   triOn = false;
   rectOn = false;
   println ("Before", triOn, rectOn);
-  
-  
+  //
   if (mouseX>butX1 && mouseX<butX1+butWidth1 && mouseY>butY1 && mouseY<butY1+butHeight1) triOn = true;
   if (mouseX>butX1 && mouseX<butX1+butWidth1 && mouseY>butY1 && mouseY<butY1+butHeight1) rectOn = true;
   println("After", triOn, rectOn);

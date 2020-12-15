@@ -17,8 +17,8 @@ void population() {
   PX3 = width*15/20; 
   PY3 = height*10/20;
   //rectangle
-  rectX = width*9/20;
-  rectY = height*10/20;
-  rectWidth = width*12/20;
-  rectHeight = height*15/20;
+  rectX = width*9/30;
+  rectY = height*10/30;
+  rectWidth = width*13/20;
+  rectHeight = height*15/30;
 }//end of Population
