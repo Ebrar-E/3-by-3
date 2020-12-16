@@ -7,13 +7,13 @@ void population() {
   buttonX3 = width*19/20;
   buttonY3 = height*8/20;
   //the rect
-  rectX = ;
-  rectY = ;
-  rectWidth = ;
-  rectHeight = ;
+  rectX = width*9/20;
+  rectY = height*3/20;
+  rectWidth = width*2/8;
+  rectHeight = height*2/8;
   //the circ 
-  circX = ;
-  circY = ;
-  circWidth = ;
-  circHeight = ;
+  circX = width*5/20;
+  circY = height*14/20;
+  circWidth = width*2/8;
+  circHeight = height*2/8;
 }//end of population
