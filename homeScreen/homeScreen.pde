@@ -5,8 +5,8 @@ float p5X, p5Y, p6X, p6Y, p7X, p7Y, p8X, p8Y;
 float p9X, p9Y, p10X, p10Y, p11X, p11Y, p12X, p12Y;
 float p13X, p13Y, p14X, p14Y, p15X, p15Y, p16X, p16Y;
 float rectWidth, rectHeight;
-color ellipse=#621940, backgroundColor=#0B032D, reset=#FFFFFF;
-
+color ellipse=#621940, backgroundColor=#0B032D, strokeColor=#F67E7D, reset=#FFFFFF;
+//all color credits should go to the color palette I used which is in the folder
 
 void setup() {
   size(500, 600);
@@ -16,6 +16,8 @@ void setup() {
 
 void draw() {
   fill(backgroundColor);
+  stroke(20);
+  stroke(strokeColor);
   rect(p1X, p1Y, rectWidth, rectHeight);
   rect(p2X, p2Y, rectWidth, rectHeight);
   rect(p3X, p3Y, rectWidth, rectHeight);
@@ -28,6 +30,7 @@ void draw() {
   rect(p10X, p10Y, rectWidth, rectHeight);
   rect(p11X, p11Y, rectWidth, rectHeight);
   fill(reset);
+  //stroke(reset);
   //
   //the ellipses
   fill(ellipse);
