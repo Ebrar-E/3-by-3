@@ -1,9 +1,9 @@
 //global variables 
 color backgroundColor=#16A085, buttonColor=#F4D03F, resetColor=#FFFFFF;
 float butX, butY, butWidth, butHeight;
+float circX, circY, circWidth, circHeight;
 float triX1, triY1, triX2, triY2, triX3, triY3;
-float rectX, rectY, rectWidth, rectHeight;
-Boolean rectOn=false, triOn=false;
+Boolean circOn=false, triOn=false;
 
 void setup() {
   size (600, 400);
@@ -13,22 +13,23 @@ void setup() {
 void draw() {
   background(backgroundColor);
   fill(buttonColor);
-  ellipse(butX, butY, butWidth, butHeight);
+  rect(butX, butY, butWidth, butHeight);
   fill(resetColor);
-  if (rectOn == true  &&  triOn == false) rect(rectX, rectY, rectWidth, rectHeight);
-  if (rectOn == false &&  triOn == true) triangle(triX1, triY1, triX2, triY2, triX3, triY3);
+  //
+  if (circOn == true  &&  triOn == false) ellipse(circX, circY, circWidth, circHeight);
+  if (circOn == false &&  triOn == true) triangle(triX1, triY1, triX2, triY2, triX3, triY3);
 }//end of draw
 
 void mousePressed() {
-  println("Before", rectOn, triOn);
+  println("Before", circOn, triOn);
   if (mouseX>butX && mouseX<butX+butWidth  &&  mouseY>butY &&  mouseY<butY+butHeight) {
-    if (rectOn == true) {
-      rectOn = false;
+    if (circOn == true) {
+      circOn = false;
       triOn = true;
     } else {
-      rectOn = false;
+      circOn = false;
       triOn = true;
     }
   }
-  println("After", rectOn, triOn);
+  println("After", circOn, triOn);
 }//end of mousePressed
