@@ -5,10 +5,10 @@ void population() {
   butWidth = width*2/8;
   butHeight = height*2/8;
   //the rect
-  circX = width*9/20;
-  circY = height*3/20;
+  circX = width*3/20;
+  circY = height*6/20;
   circWidth = width*2/8;
-  circHeight = height*2/8;
+  circHeight = height*3/8;
   //the tri
   triX1 = width*16/20;
   triY1 = height*17/20;

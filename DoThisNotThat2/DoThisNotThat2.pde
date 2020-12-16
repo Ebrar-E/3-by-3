@@ -1,5 +1,5 @@
 //global variables 
-color backgroundColor=#16A085, buttonColor=#F4D03F, triColor=#9B59B6, resetColor=#FFFFFF;
+color backgroundColor=#16A085, buttonColor=#F4D03F, circColor=#3498DB, triColor=#9B59B6, resetColor=#FFFFFF;
 float butX, butY, butWidth, butHeight;
 float circX, circY, circWidth, circHeight;
 float triX1, triY1, triX2, triY2, triX3, triY3;
@@ -18,7 +18,9 @@ void draw() {
   fill(resetColor);
   text();
   //
+  fill(circColor);
   if (circOn == true  &&  triOn == false) ellipse(circX, circY, circWidth, circHeight);
+  fill(resetColor);
   fill(triColor);
   if (circOn == false &&  triOn == true) triangle(triX1, triY1, triX2, triY2, triX3, triY3);
   fill(resetColor);
@@ -31,8 +33,8 @@ void mousePressed() {
       circOn = false;
       triOn = true;
     } else {
-      circOn = false;
-      triOn = true;
+      circOn = true;
+      triOn = false;
     }
   }
   println("After", circOn, triOn);

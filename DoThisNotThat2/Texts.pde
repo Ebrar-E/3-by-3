@@ -10,6 +10,6 @@ void textSetup() {
 void text() {
   fill(black);
   textAlign (CENTER, CENTER);
-  textFont(theFont, 20);
+  textFont(theFont, 30);
   text(buttonText, butX, butY, butWidth, butHeight);
 }//end of text
