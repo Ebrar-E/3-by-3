@@ -23,6 +23,10 @@ void draw() {
   rect(p6X, p6Y, rectWidth, rectHeight);
   rect(p7X, p7Y, rectWidth, rectHeight);
   //
+  rect(p9X, p9Y, rectWidth, rectHeight);
+  rect(p10X, p10Y, rectWidth, rectHeight);
+  rect(p11X, p11Y, rectWidth, rectHeight);
+  //
   //the ellipses
   fill(ellipse);
   ellipse(p1X, p1Y, pDiameter, pDiameter);
