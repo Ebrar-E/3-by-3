@@ -1,6 +1,6 @@
-/*
-String buttonText1 = "I am the one";
-String buttonText2 = "No I am";
+
+String buttonText1 = "I am the one!";
+String buttonText2 = "No, I am!";
 PFont titleFont;
 color yellow=#FEB95E, whiteReset=#FFFFFF;
 
@@ -18,13 +18,12 @@ void textDrawPre() {
 
 void textDraw1() {
   textDrawPre();
-  text(butX1, butY1, butWidth1, buttonHeight1);
+  text(buttonText1, butX1, butY1, butWidth1, butHeight1);
   fill(whiteReset);
 }//textDraw1
 
 void textDraw2() {
   textDrawPre();
-  text(butX2, butY2, butWidth2, buttonHeight2);
-   fill(whiteReset);
+  text(buttonText2, butX2, butY2, butWidth2, butHeight2);
+  fill(whiteReset);
 }//textDraw2
-*/

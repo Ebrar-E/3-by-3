@@ -10,15 +10,15 @@ void population() {
   butWidth2 = width*1/5;
   butHeight2 = height*1/5;
   //triangle
-  PX1 = width*10/20;
-  PY1 = height*5/20;
-  PX2 = width*5/20;
+  PX1 = width*16/20;
+  PY1 = height*15/20;
+  PX2 = width*13/20;
   PY2 = height*10/20;
-  PX3 = width*15/20; 
+  PX3 = width*19/20; 
   PY3 = height*10/20;
   //rectangle
-  rectX = width*9/30;
-  rectY = height*10/30;
-  rectWidth = width*13/20;
-  rectHeight = height*15/30;
+  rectX = width*2/20;
+  rectY = height*13/20;
+  rectWidth = width*2/8;
+  rectHeight = height*2/8;
 }//end of Population
