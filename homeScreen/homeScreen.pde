@@ -15,6 +15,7 @@ void setup() {
 }//end of setup
 
 void draw() {
+  fill(backgroundColor);
   rect(p1X, p1Y, rectWidth, rectHeight);
   rect(p2X, p2Y, rectWidth, rectHeight);
   rect(p3X, p3Y, rectWidth, rectHeight);
@@ -26,6 +27,7 @@ void draw() {
   rect(p9X, p9Y, rectWidth, rectHeight);
   rect(p10X, p10Y, rectWidth, rectHeight);
   rect(p11X, p11Y, rectWidth, rectHeight);
+  fill(reset);
   //
   //the ellipses
   fill(ellipse);
