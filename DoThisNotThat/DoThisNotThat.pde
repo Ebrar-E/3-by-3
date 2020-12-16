@@ -17,9 +17,9 @@ void setup() {
 void draw() {
   background(backgroundColor);
   rect(butX1, butY1, butWidth1, butHeight1);
-  textDraw1();
+  text1();
   rect(butX2, butY2, butWidth2, butHeight2);
-  textDraw2();
+  text2();
   fill(triColor);
   if (rectOn == false && triOn == true) triangle(PX1, PY1, PX2, PY2, PX3, PY3);
   fill(resetColor);
