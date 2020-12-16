@@ -11,4 +11,9 @@ void population() {
   rectY = ;
   rectWidth = ;
   rectHeight = ;
+  //the circ 
+  circX = ;
+  circY = ;
+  circWidth = ;
+  circHeight = ;
 }//end of population
