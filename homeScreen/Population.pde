@@ -48,5 +48,8 @@ void population() {
   //button info
   butWidth = width*1/9;
   butHeight = height*1/12;
+  //
+  //pic1
+  
   
 }//end of population
