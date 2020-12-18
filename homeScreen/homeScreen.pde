@@ -5,8 +5,19 @@ float p5X, p5Y, p6X, p6Y, p7X, p7Y, p8X, p8Y;
 float p9X, p9Y, p10X, p10Y, p11X, p11Y, p12X, p12Y;
 float p13X, p13Y, p14X, p14Y, p15X, p15Y, p16X, p16Y;
 float rectWidth, rectHeight;
-color ellipse=#621940, backgroundColor=#0B032D, strokeColor=#F67E7D, reset=#FFFFFF;
-//all color credits should go to the color palette I used which is in the folder
+float butX1, butY1;
+float butX2, butY2;
+float butX3, butY3;
+float butX4, butY4;
+float butX5, butY5;
+float butX6, butY6;
+float butX7, butY7;
+float butX8, butY8;
+float butX9, butY9;
+float butWidth, butHeight;
+color ellipse=#621940, buttonsColor=#843B62, backgroundColor=#0B032D, strokeColor=#F67E7D, reset=#FFFFFF;
+
+//all color credits should go to the color palette I used which is in Images
 
 void setup() {
   size(500, 600);
@@ -50,6 +61,19 @@ void draw() {
   ellipse(p14X, p14Y, pDiameter, pDiameter);
   ellipse(p15X, p15Y, pDiameter, pDiameter);
   ellipse(p16X, p16Y, pDiameter, pDiameter);
+  fill(reset);
+  //
+  //buttons
+  fill(buttonsColor);
+  rect(butX1, butY1, butWidth, butHeight);
+  rect(butX2, butY2, butWidth, butHeight);
+  rect(butX3, butY3, butWidth, butHeight);
+  rect(butX4, butY4, butWidth, butHeight);
+  rect(butX5, butY5, butWidth, butHeight);
+  rect(butX6, butY6, butWidth, butHeight);
+  rect(butX7, butY7, butWidth, butHeight);
+  rect(butX8, butY8, butWidth, butHeight);
+  rect(butX9, butY9, butWidth, butHeight);
   fill(reset);
 }//end of draw
 

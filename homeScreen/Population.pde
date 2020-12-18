@@ -16,5 +16,37 @@ void population() {
   //rect info
   rectWidth=width*1/3;
   rectHeight=height*1/3;
+  //
+  //the buttons 
+  butX1 = width*1/9;
+  butY1 = height*1/9;
+  //
+  butX2 = width*4/9; 
+  butY2 = height*1/9;
+  //
+  butX3 = width*7/9;
+  butY3 = height*1/9;
+  //
+  butX4 = width*1/9;
+  butY4 = height*4/9;
+  //
+  butX5 = width*4/9;
+  butY5 = height*4/9;
+  //
+  butX6 = width*7/9;
+  butY6 = height*4/9;
+  //
+  butX7 = width*1/9;
+  butY7 = height*7/9;
+  //
+  butX8 = width*4/9;
+  butY8 = height*7/9;
+  //
+  butX9 = width*7/9;
+  butY9 = height*7/9;
+  //
+  //button info
+  butWidth = width*1/9;
+  butHeight = height*1/12;
   
 }//end of population
