@@ -144,6 +144,8 @@ void draw() {
   }
 }//end of draw
 
+
+
 void mousePressed() {
   //make all of them false
   butOnX1 = false;
@@ -164,4 +166,7 @@ void mousePressed() {
   butOnY8 = false;
   butOnX9 = false;
   butOnY9 = false;
+  //
+  //before pressing the buttons
+  if (mouseX>butX1 && mouseX<butX1+butWidth && mouseY>butY1 && mouseY<butY1+butHeight ) butOnX1 = butOnY1 = true;
 }//end of mousePressed
