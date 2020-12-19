@@ -21,8 +21,8 @@ void blueStarShape() {
 
 void purpleMoonShape() {
   ellipse(moonX, moonY, moonDiameter, moonDiameter);
-  ellipse(holeX1, holeY1, holeDiameter, holeDiameter);
-  ellipse(holeX2, holeY2, holeDiameter, holeDiameter);
-  ellipse(holeX3, holeY3, holeDiameter, holeDiameter);
-  ellipse(holeX4, holeY4, holeDiameter, holeDiameter);
+  ellipse(holeX1, holeY1, holeDiameter1, holeDiameter1);
+  ellipse(holeX2, holeY2, holeDiameter2, holeDiameter2);
+  ellipse(holeX3, holeY3, holeDiameter3, holeDiameter3);
+  ellipse(holeX4, holeY4, holeDiameter4, holeDiameter4);
 }//end of purpleMoonShape
