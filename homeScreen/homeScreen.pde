@@ -1,4 +1,5 @@
 //global variables
+PImage image1;
 float pDiameter;
 float p1X, p1Y, p2X, p2Y, p3X, p3Y, p4X, p4Y;
 float p5X, p5Y, p6X, p6Y, p7X, p7Y, p8X, p8Y;
@@ -29,7 +30,6 @@ void setup() {
 }//end of setup
 
 void draw() {
-  if ( image1 == true ) pic1=loadImage("image1.png");
   //
   fill(backgroundColor);
   stroke(20);
@@ -70,7 +70,7 @@ void draw() {
   //
   //buttons
   //
-  //1
+  //but1
   if ( mouseX>=butX1 && mouseX<=butX1+butWidth && mouseY>=butY1 && mouseY<=butY1+butHeight ) {
     fill(hoverColor);
     rect(butX1, butY1, butWidth, butHeight);
@@ -78,7 +78,7 @@ void draw() {
     fill(buttonColor);
     rect(butX1, butY1, butWidth, butHeight);
   }
-  //2
+  //but2
   if ( mouseX>=butX2 && mouseX<=butX2+butWidth && mouseY>=butY2 && mouseY<=butY2+butHeight ) {
     fill(hoverColor);
     rect(butX2, butY2, butWidth, butHeight);
@@ -86,7 +86,7 @@ void draw() {
     fill(buttonColor);
     rect(butX2, butY2, butWidth, butHeight);
   }
-  //3
+  //but3
   if ( mouseX>=butX3 && mouseX<=butX3+butWidth && mouseY>=butY3 && mouseY<=butY3+butHeight ) {
     fill(hoverColor);
     rect(butX3, butY3, butWidth, butHeight);
@@ -94,7 +94,7 @@ void draw() {
     fill(buttonColor);
     rect(butX3, butY3, butWidth, butHeight);
   }
-  //4
+  //but4
   if ( mouseX>=butX4 && mouseX<=butX4+butWidth && mouseY>=butY4 && mouseY<=butY4+butHeight ) {
     fill(hoverColor);
     rect(butX4, butY4, butWidth, butHeight);
@@ -102,7 +102,7 @@ void draw() {
     fill(buttonColor);
     rect(butX4, butY4, butWidth, butHeight);
   }
-  //5
+  //but5
   if ( mouseX>=butX5 && mouseX<=butX5+butWidth && mouseY>=butY5 && mouseY<=butY5+butHeight ) {
     fill(hoverColor);
     rect(butX5, butY5, butWidth, butHeight);
@@ -110,7 +110,7 @@ void draw() {
     fill(buttonColor);
     rect(butX5, butY5, butWidth, butHeight);
   }
-  //6
+  //but6
   if ( mouseX>=butX6 && mouseX<=butX6+butWidth && mouseY>=butY6 && mouseY<=butY6+butHeight ) {
     fill(hoverColor);
     rect(butX6, butY6, butWidth, butHeight);
@@ -118,7 +118,7 @@ void draw() {
     fill(buttonColor);
     rect(butX6, butY6, butWidth, butHeight);
   }
-  //7
+  //but7
   if ( mouseX>=butX7 && mouseX<=butX7+butWidth && mouseY>=butY7 && mouseY<=butY7+butHeight ) {
     fill(hoverColor);
     rect(butX7, butY7, butWidth, butHeight);
@@ -126,7 +126,7 @@ void draw() {
     fill(buttonColor);
     rect(butX7, butY7, butWidth, butHeight);
   }
-  //8
+  //but8
   if ( mouseX>=butX8 && mouseX<=butX8+butWidth && mouseY>=butY8 && mouseY<=butY8+butHeight ) {
     fill(hoverColor);
     rect(butX8, butY8, butWidth, butHeight);
@@ -134,7 +134,7 @@ void draw() {
     fill(buttonColor);
     rect(butX8, butY8, butWidth, butHeight);
   }
-  //9
+  //but9
   if ( mouseX>=butX9 && mouseX<=butX9+butWidth && mouseY>=butY9 && mouseY<=butY9+butHeight ) {
     fill(hoverColor);
     rect(butX9, butY9, butWidth, butHeight);
@@ -142,6 +142,8 @@ void draw() {
     fill(buttonColor);
     rect(butX9, butY9, butWidth, butHeight);
   }
+  
+  if(butOnX1 == true && butOnY1 == false) loadImage("image1.png");
 }//end of draw
 
 
