@@ -50,6 +50,11 @@ void population() {
   butHeight = height*1/12;
   //
   //pic1
+  pic1 = loadImage("image1.png");
+  picWidthRatio1 = 660/660.0;
+  picHeightRatio1 = 830.0/660.0;
+  picWidth1 = width*1/9;
+  picHeigh1 = height*1/9;
   
   
 }//end of population

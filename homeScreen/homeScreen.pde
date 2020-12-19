@@ -16,9 +16,8 @@ float butX8, butY8;
 float butX9, butY9;
 float butWidth, butHeight;
 color ellipse=#621940, buttonColor=#843B62, hoverColor=#FFB997, backgroundColor=#0B032D, strokeColor=#F67E7D, reset=#FFFFFF;
-Boolean butOnX1=false, butOnY1=false, butOnX2=false, butOnY2=false, butOnX3=false, butOnY3=false;
-Boolean butOnX4=false, butOnY4=false, butOnX5=false, butOnY5=false, butOnX6=false, butOnY6=false;
-Boolean butOnX7=false, butOnY7=false, butOnX8=false, butOnY8=false, butOnX9=false, butOnY9=false;
+//
+Boolean picOn1=false, picOn2=false, picOn3=false;
 //
 PImage pic1;
 float picWidth1, picHeigh1;
@@ -154,34 +153,14 @@ void draw() {
     rect(butX9, butY9, butWidth, butHeight);
   }
 
-  if (butOnX1 == true && butOnY1 == false) {
-    image();
+  if (picOn1 == true) {
+    image(pic1, picWidth1, picHeigh1);
   }
 }//end of draw
 
 
 
 void mousePressed() {
-  //make all of them false
-  butOnX1 = false;
-  butOnY1 = false;
-  butOnX2 = false;
-  butOnY2 = false;
-  butOnX3 = false;
-  butOnY3 = false;
-  butOnX4 = false;
-  butOnY4 = false;
-  butOnX5 = false;
-  butOnY5 = false;
-  butOnX6 = false;
-  butOnY6 = false;
-  butOnX7 = false;
-  butOnY7 = false;
-  butOnX8 = false;
-  butOnY8 = false;
-  butOnX9 = false;
-  butOnY9 = false;
+  if 
   //
-  //before pressing the buttons
-  if (mouseX>butX1 && mouseX<butX1+butWidth && mouseY>butY1 && mouseY<butY1+butHeight ) butOnX1 = butOnY1 = true;
 }//end of mousePressed
