@@ -1,5 +1,4 @@
 //global variables
-PImage image1;
 float pDiameter;
 float p1X, p1Y, p2X, p2Y, p3X, p3Y, p4X, p4Y;
 float p5X, p5Y, p6X, p6Y, p7X, p7Y, p8X, p8Y;
@@ -20,6 +19,14 @@ color ellipse=#621940, buttonColor=#843B62, hoverColor=#FFB997, backgroundColor=
 Boolean butOnX1=false, butOnY1=false, butOnX2=false, butOnY2=false, butOnX3=false, butOnY3=false;
 Boolean butOnX4=false, butOnY4=false, butOnX5=false, butOnY5=false, butOnX6=false, butOnY6=false;
 Boolean butOnX7=false, butOnY7=false, butOnX8=false, butOnY8=false, butOnX9=false, butOnY9=false;
+//
+PImage pic1;
+float picWidth1, picHeigh1;
+float picWidthRatio1 picHeightRatio1;
+//
+PImage pic2;
+float picWidth2, picHeigh2;
+float picWidthRatio2 picHeightRatio2;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -142,8 +149,10 @@ void draw() {
     fill(buttonColor);
     rect(butX9, butY9, butWidth, butHeight);
   }
-  
-  if(butOnX1 == true && butOnY1 == false) loadImage("image1.png");
+
+  if (butOnX1 == true && butOnY1 == false) {
+    image();
+  }
 }//end of draw
 
 
