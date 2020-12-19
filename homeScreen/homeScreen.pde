@@ -40,6 +40,9 @@ float moonX, moonY, moonDiameter;
 float holeX1, holeY1, holeDiameter1, holeX2, holeY2, holeDiameter2, holeX3, holeY3, holeDiameter3, holeX4, holeY4, holeDiameter4;
 Boolean moon=false;
 color moonColor=#160F29, hole1Color=#382372, hole2Color=#4D368E, hole3Color=#CCBFF2, hole4Color=#B6A8DD, reset2=#FFB997;
+//
+float a = 1530, b, c, d, x, y;
+Boolean tree=false;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -103,6 +106,10 @@ void draw() {
   if ( moon == true) {
     purpleMoonShape();
   }
+  //
+  if ( tree == true) {
+    orangeTreeShape();
+  }
 }//end of draw
 
 
@@ -128,5 +135,9 @@ void mousePressed() {
   if ( mouseX>=butX6 && mouseX<=butX6+butWidth && mouseY>=butY6 && mouseY<=butY6+butHeight ) {
     println("Activated Button 6");
     moon = true;
+  }
+  if ( mouseX>=butX7 && mouseX<=butX7+butWidth && mouseY>=butY7 && mouseY<=butY7+butHeight ) {
+    println("Activated Button 7");
+    cloud = true;
   }
 }//end of mousePressed

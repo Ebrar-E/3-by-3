@@ -41,3 +41,7 @@ void purpleMoonShape() {
   ellipse(holeX4, holeY4, holeDiameter4, holeDiameter4);
   fill(reset2);
 }//end of purpleMoonShape
+
+void orangeTreeShape(){
+  
+}
