@@ -78,8 +78,8 @@ void population() {
   //
   //purpleMoonShape
   
-  moonX = width;
-  moonY = height;
+  moonX = width*10/12;
+  moonY = height*6/12;
   //
   holeX1 = width;
   holeY1 = height;
@@ -93,6 +93,6 @@ void population() {
   holeX4 = width;
   holeY4 = height;
   //
-  moonDiameter = rectHeight*1/3;
-  holeDiameter = height*1/5;
+  moonDiameter = height*1/5;
+  holeDiameter = rectHeight*1/6;
 }//end of population

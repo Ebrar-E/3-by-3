@@ -35,10 +35,10 @@ float picWidthRatio3, picHeightRatio3;
 //
 //
 Boolean star=false;
-Boolean butOn2=false;
 //
 float moonX, moonY, moonDiameter, holeDiameter;
 float holeX1, holeY1, holeX2, holeY2, holeX3, holeY3, holeX4, holeY4;
+Boolean moon=false;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -98,6 +98,10 @@ void draw() {
   if ( star == true) {
     blueStarShape();
   }
+  //
+  if ( moon == true) {
+    purpleMoonShape();
+  }
 }//end of draw
 
 
@@ -119,6 +123,9 @@ void mousePressed() {
   if ( mouseX>=butX2 && mouseX<=butX2+butWidth && mouseY>=butY2 && mouseY<=butY2+butHeight ) {
     println("Activated Button 2");
     star = true;
-    butOn2 = false;
   } 
+  if ( mouseX>=butX6 && mouseX<=butX6+butWidth && mouseY>=butY6 && mouseY<=butY6+butHeight ) {
+    println("Activated Button 6");
+    moon = true;
+  }
 }//end of mousePressed
