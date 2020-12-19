@@ -75,6 +75,23 @@ void population() {
   picHeightRatio3 = 853.0/640.0;
   picWidth3 = width*8.4/12;
   picHeigh3 = height*8.4/12;
+  //
+  //purpleMoonShape
   
+  //
+  moonX = ;
+  moonY = ;
+  //
+  holeX1 = ;
+  holeY1 = ;
+  //
+  holeX2 = ;
+  holeY2 = ;
+  //
+  holeX3 = ;
+  holeY3 = ;
+  //
+  moonDiameter = ;
+  holeDiameter = ;
   
 }//end of population

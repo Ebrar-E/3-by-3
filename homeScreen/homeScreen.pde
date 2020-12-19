@@ -86,9 +86,11 @@ void draw() {
   hoverOver();
   //
   imageButtons();
+  //
+  
   
   if ( star == true) {
-    starShape();
+    blueStarShape();
   }
 }//end of draw
 
