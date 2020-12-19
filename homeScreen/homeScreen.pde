@@ -57,8 +57,9 @@ Boolean textRect1=false;
 Boolean textRect2=false;
 Boolean textRect3=false;
 color cyanColor=#0D827D, purpleColor=#7E43B1, redColor=#C90404, textColor=#EFF2D3, stroke1Color=#EFF2D2;
+//
+//
 
-//all color credits should go to the color palette I used which is in Images
 
 void setup() {
   size(500, 600);
@@ -186,3 +187,8 @@ void mousePressed() {
     textRect3 = true;
   }
 }//end of mousePressed
+
+
+void keyPressed() {
+  if (key == 'q' || key == 'Q') exit();
+}//end of keyPressed
