@@ -48,6 +48,9 @@ float leaf2X1, leaf2Y1, leaf2X2, leaf2Y2, leaf2X3, leaf2Y3;
 float leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3;
 float treeX, treeY, treeWidth, treeHeight;
 color logColor=#7F3600, leaf3Color=#940700, leaf2Color=#BB280F, leaf1Color=#DD4224;
+//
+float textRectX1, textRect2, textRectWidth1, textRectHeight1;
+Boolean textRect1=false;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -97,6 +100,10 @@ void draw() {
   ellipse(p16X, p16Y, pDiameter, pDiameter);
   fill(reset);
   //
+  //text rects
+  rect(textRectX1, textRect2, textRectWidth1, textRectHeight1);
+  textButton1();
+  //
   but1void();
   but2void();
   but3void();
@@ -109,9 +116,7 @@ void draw() {
   //
   imageButtons();
   //
-  
-  
-  
+  //the shape buttons
   if ( star == true) {
     blueStarShape();
   }
@@ -122,6 +127,11 @@ void draw() {
   //
   if ( tree == true) {
     orangeTreeShape();
+  }
+  //
+  //text buttons
+  if ( textRect1 == true) {
+    textButton1();
   }
 }//end of draw
 
@@ -152,5 +162,10 @@ void mousePressed() {
   if ( mouseX>=butX7 && mouseX<=butX7+butWidth && mouseY>=butY7 && mouseY<=butY7+butHeight ) {
     println("Activated Button 7");
     tree = true;
+  }
+  //text buttons
+  if ( mouseX>=butX3 && mouseX<=butX3+butWidth && mouseY>=butY3 && mouseY<=butY3+butHeight ) {
+    println("Activated Button 3");
+    textRect1 = true;
   }
 }//end of mousePressed
