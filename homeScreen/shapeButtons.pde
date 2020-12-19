@@ -20,9 +20,24 @@ void blueStarShape() {
 }// end of blueStarShape
 
 void purpleMoonShape() {
+  fill(moonColor);
+  stroke(moonColor);
   ellipse(moonX, moonY, moonDiameter, moonDiameter);
+  fill(reset2);
+  //
+  fill(hole1Color);
   ellipse(holeX1, holeY1, holeDiameter1, holeDiameter1);
+  fill(reset2);
+  //
+  fill(hole2Color);
   ellipse(holeX2, holeY2, holeDiameter2, holeDiameter2);
+  fill(reset2);
+  //
+  fill(hole3Color);
   ellipse(holeX3, holeY3, holeDiameter3, holeDiameter3);
+  fill(reset2);
+  //
+  fill(hole4Color);
   ellipse(holeX4, holeY4, holeDiameter4, holeDiameter4);
+  fill(reset2);
 }//end of purpleMoonShape
