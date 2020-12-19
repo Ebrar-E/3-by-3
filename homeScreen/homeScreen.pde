@@ -4,6 +4,7 @@ float p1X, p1Y, p2X, p2Y, p3X, p3Y, p4X, p4Y;
 float p5X, p5Y, p6X, p6Y, p7X, p7Y, p8X, p8Y;
 float p9X, p9Y, p10X, p10Y, p11X, p11Y, p12X, p12Y;
 float p13X, p13Y, p14X, p14Y, p15X, p15Y, p16X, p16Y;
+//
 float rectWidth, rectHeight;
 float butX1, butY1;
 float butX2, butY2;
@@ -15,6 +16,7 @@ float butX7, butY7;
 float butX8, butY8;
 float butX9, butY9;
 float butWidth, butHeight;
+//
 color ellipse=#621940, buttonColor=#843B62, hoverColor=#FFB997, backgroundColor=#0B032D, strokeColor=#F67E7D, reset=#FFFFFF;
 //
 Boolean picOn1=false, picOn2=false, picOn3=false;
@@ -34,6 +36,9 @@ float picWidthRatio3, picHeightRatio3;
 //
 Boolean star=false;
 Boolean butOn2=false;
+//
+float moonX, moonY, moonDiameter, holeDiameter;
+float holeX1, holeY1, holeX2, holeY2, holeX3, holeY3, holeX4, holeY4;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -87,6 +92,7 @@ void draw() {
   //
   imageButtons();
   //
+  
   
   
   if ( star == true) {
