@@ -52,14 +52,29 @@ void population() {
   //pic1
   pic1 = loadImage("image1.png");
   pic1.resize(pic1.width/5, pic1.height/5);
-  //size(pic1.width, pic1.height);
   image(pic1, 0, 0);
   picWidthRatio1 = 660/660.0;
   picHeightRatio1 = 830.0/660.0;
   picWidth1 = width*0.4/12;
   picHeigh1 = height*0.3/12;
   //
+  //pic2
+  pic2 = loadImage("image2.jpg");
+  pic2.resize(pic2.width/7, pic2.height/7);
+  image(pic2, 0, 0);
+  picWidthRatio2 = 995/995.0;
+  picHeightRatio2 = 1200.0/995.0;
+  picWidth2 = width*4.4/12;
+  picHeigh2 = height*4.35/12;
   //
+  //pic3
+  pic3 = loadImage("image3.jpg");
+  pic3.resize(pic3.width/5, pic3.height/5);
+  image(pic3, 0, 0);
+  picWidthRatio3 = 640/640.0;
+  picHeightRatio3 = 853.0/640.0;
+  picWidth3 = width*8.4/12;
+  picHeigh3 = height*8.4/12;
   
   
 }//end of population
