@@ -156,11 +156,22 @@ void draw() {
   if (picOn1 == true) {
     image(pic1, picWidth1, picHeigh1);
   }
+  if (picOn2 == true) {
+    image(pic2, picWidth2, picHeigh2);
+  }
 }//end of draw
 
 
 
 void mousePressed() {
-  if 
+  //image buttons
+  if ( mouseX>=butX1 && mouseX<=butX1+butWidth && mouseY>=butY1 && mouseY<=butY1+butHeight ) {
+    println("Activated Button 1");
+    picOn1 = true;
+  } 
+  if ( mouseX>=butX2 && mouseX<=butX2+butWidth && mouseY>=butY2 && mouseY<=butY2+butHeight ) {
+    println("Activated Button 2");
+    picOn2 = true;
+  } 
   //
 }//end of mousePressed

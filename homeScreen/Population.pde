@@ -51,10 +51,15 @@ void population() {
   //
   //pic1
   pic1 = loadImage("image1.png");
+  pic1.resize(pic1.width/5, pic1.height/5);
+  //size(pic1.width, pic1.height);
+  image(pic1, 0, 0);
   picWidthRatio1 = 660/660.0;
   picHeightRatio1 = 830.0/660.0;
-  picWidth1 = width*1/9;
-  picHeigh1 = height*1/9;
+  picWidth1 = width*0.4/12;
+  picHeigh1 = height*0.3/12;
+  //
+  //
   
   
 }//end of population
