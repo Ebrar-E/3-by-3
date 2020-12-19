@@ -49,8 +49,14 @@ float leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3;
 float treeX, treeY, treeWidth, treeHeight;
 color logColor=#7F3600, leaf3Color=#940700, leaf2Color=#BB280F, leaf1Color=#DD4224;
 //
-float textRectX1, textRect2, textRectWidth1, textRectHeight1;
+float textRectWidth, textRectHeight;
+float textRectX1, textRectY1;
+float textRectX2, textRectY2;
+float textRectX3, textRectY3;
 Boolean textRect1=false;
+Boolean textRect2=false;
+Boolean textRect3=false;
+color cyanColor=#0D827D, purpleColor=#7E43B1, redColor=#C90404, textColor=#EFF2D3, stroke1Color=#EFF2D2;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -100,9 +106,6 @@ void draw() {
   ellipse(p16X, p16Y, pDiameter, pDiameter);
   fill(reset);
   //
-  //text rects
-  rect(textRectX1, textRect2, textRectWidth1, textRectHeight1);
-  textButton1();
   //
   but1void();
   but2void();
@@ -132,6 +135,12 @@ void draw() {
   //text buttons
   if ( textRect1 == true) {
     textButton1();
+  }
+  if ( textRect2 == true) {
+    textButton2();
+  }
+  if ( textRect3 == true) {
+    textButton3();
   }
 }//end of draw
 
@@ -167,5 +176,13 @@ void mousePressed() {
   if ( mouseX>=butX3 && mouseX<=butX3+butWidth && mouseY>=butY3 && mouseY<=butY3+butHeight ) {
     println("Activated Button 3");
     textRect1 = true;
+  }
+  if ( mouseX>=butX4 && mouseX<=butX4+butWidth && mouseY>=butY4 && mouseY<=butY4+butHeight ) {
+    println("Activated Button 4");
+    textRect2 = true;
+  }
+  if ( mouseX>=butX8 && mouseX<=butX8+butWidth && mouseY>=butY8 && mouseY<=butY8+butHeight ) {
+    println("Activated Button 8");
+    textRect3 = true;
   }
 }//end of mousePressed

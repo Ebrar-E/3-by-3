@@ -122,13 +122,20 @@ void population() {
   leaf3Y3 = height*18/20;
   //the log
   treeX = width*2.5/20;
-  treeY = height*10.5/20;
+  treeY = height*17/20;
   treeWidth = width*1/12;
   treeHeight = height*1/7;
   //
   //textRect1
   textRectX1 = width*8.4/12;
-  textRect2 = height*0.5/30;
-  textRectWidth1 = width*1.6/6;
-  textRectHeight1 = height*1.8/6;
+  textRectY1 = height*0.5/30;
+  //
+  textRectX2 = width*0.4/12;
+  textRectY2 = height*10.4/30;
+  //
+  textRectX3 = width*4.4/12;
+  textRectY3 = height*20.6/30;
+  //
+  textRectWidth = width*1.6/6;
+  textRectHeight = height*1.8/6;
 }//end of population
