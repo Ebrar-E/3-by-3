@@ -17,7 +17,7 @@ float butX8, butY8;
 float butX9, butY9;
 float butWidth, butHeight;
 //
-color ellipse=#621940, buttonColor=#843B62, hoverColor=#FFB997, backgroundColor=#0B032D, strokeColor=#F67E7D, reset=#FFFFFF;
+color ellipse=#621940, white=#FFFFFF, buttonColor=#843B62, hoverColor=#FFB997, backgroundColor=#0B032D, strokeColor=#F67E7D, reset=#FFFFFF;
 //
 Boolean picOn1=false, picOn2=false, picOn3=false;
 //
@@ -34,6 +34,7 @@ float picWidth3, picHeigh3;
 float picWidthRatio3, picHeightRatio3;
 //
 //
+color starColor=#007C8C, starStrokeColor=#008C8C;
 Boolean star=false;
 //
 float moonX, moonY, moonDiameter;
@@ -46,6 +47,7 @@ float leaf1X1, leaf1Y1, leaf1X2, leaf1Y2, leaf1X3, leaf1Y3;
 float leaf2X1, leaf2Y1, leaf2X2, leaf2Y2, leaf2X3, leaf2Y3;
 float leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3;
 float treeX, treeY, treeWidth, treeHeight;
+color logColor=#7F3600, leaf3Color=#940700, leaf2Color=#BB280F, leaf1Color=#DD4224;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -95,7 +97,15 @@ void draw() {
   ellipse(p16X, p16Y, pDiameter, pDiameter);
   fill(reset);
   //
-  hoverOver();
+  but1void();
+  but2void();
+  but3void();
+  but4void();
+  but5void();
+  but6void();
+  but7void();
+  but8void();
+  but9void();
   //
   imageButtons();
   //

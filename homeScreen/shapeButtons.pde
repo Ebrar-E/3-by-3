@@ -1,8 +1,8 @@
 void blueStarShape() {
-  color starColor=#007C8C;
   push();
   translate(275, 285); // center of the star
   fill(starColor);
+  stroke(starStrokeColor);
   beginShape();
   vertex(-23, -270); //1
   vertex(-9, -225);
@@ -11,7 +11,7 @@ void blueStarShape() {
   vertex(11, -140); //3
   vertex(-23, -165);
   vertex(-57, -140); //4
-  vertex(-52, -193);
+  vertex(-53, -193);
   vertex(-85, -215); //5
   vertex(-37, -225);
   endShape(CLOSE);
@@ -44,11 +44,27 @@ void purpleMoonShape() {
 
 void orangeTreeShape(){
   //the log
+  fill(logColor);
+  stroke(logColor);
   rect(treeX, treeY, treeWidth, treeHeight);
+  stroke(reset2);
+  fill(reset2);
   //3rd leaf
+  fill(leaf3Color);
+  stroke(leaf3Color);
   triangle(leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3);
+  stroke(reset2);
+  fill(reset2);
   //2nd leaf
+  fill(leaf2Color);
+  stroke(leaf2Color);
   triangle(leaf2X1, leaf2Y1, leaf2X2, leaf2Y2, leaf2X3, leaf2Y3);
+  stroke(reset2);
+  fill(reset2);
   //1st leaf
+  fill(leaf1Color);
+  stroke(leaf1Color);
   triangle(leaf1X1, leaf1Y1, leaf1X2, leaf1Y2, leaf1X3, leaf1Y3);
+  stroke(reset2);
+  fill(reset2);
 }
