@@ -41,8 +41,11 @@ float holeX1, holeY1, holeDiameter1, holeX2, holeY2, holeDiameter2, holeX3, hole
 Boolean moon=false;
 color moonColor=#160F29, hole1Color=#382372, hole2Color=#4D368E, hole3Color=#CCBFF2, hole4Color=#B6A8DD, reset2=#FFB997;
 //
-float a = 1530, b, c, d, x, y;
 Boolean tree=false;
+float leaf1X1, leaf1Y1, leaf1X2, leaf1Y2, leaf1X3, leaf1Y3;
+float leaf2X1, leaf2Y1, leaf2X2, leaf2Y2, leaf2X3, leaf2Y3;
+float leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3;
+float treeX, treeY, treeWidth, treeHeight;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -138,6 +141,6 @@ void mousePressed() {
   }
   if ( mouseX>=butX7 && mouseX<=butX7+butWidth && mouseY>=butY7 && mouseY<=butY7+butHeight ) {
     println("Activated Button 7");
-    cloud = true;
+    tree = true;
   }
 }//end of mousePressed

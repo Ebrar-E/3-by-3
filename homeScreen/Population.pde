@@ -98,4 +98,33 @@ void population() {
   holeY4 = height*13.5/24;
   holeDiameter4 = height*1/18;
   //
+  //orangeTreeShape
+  //1st leaf
+  /*
+  leaf1X1 = width;
+  leaf1Y1 = height;
+  leaf1X2 = width;
+  leaf1Y2 = height;
+  leaf1X3 = width;
+  leaf1Y3 = height;
+  //2nd leaf
+  leaf2X1 = width;
+  leaf2Y1 = height;
+  leaf2X2 = width;
+  leaf2Y2 = height;
+  leaf2X3 = width;
+  leaf2Y3 = height;
+  //3rd leaf
+  leaf3X1 = width;
+  leaf3Y1 = height;
+  leaf3X2 = width;
+  leaf3Y2 = height;
+  leaf3X3 - width;
+  leaf3Y3 = height;
+  */
+  //the log
+  treeX = width*2.3/20;
+  treeY = height*10/12;
+  treeWidth = width*1/12;
+  treeHeight = height*1/6;
 }//end of population
