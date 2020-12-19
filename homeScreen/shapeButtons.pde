@@ -43,12 +43,12 @@ void purpleMoonShape() {
 }//end of purpleMoonShape
 
 void orangeTreeShape(){
-  //1st leaf
-  triangle(leaf1X1, leaf1Y1, leaf1X2, leaf1Y2, leaf1X3, leaf1Y3);
-  //2nd leaf
-  triangle(leaf2X1, leaf2Y1, leaf2X2, leaf2Y2, leaf2X3, leaf2Y3);
-  //3rd leaf
-  triangle(leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3);
   //the log
   rect(treeX, treeY, treeWidth, treeHeight);
+  //3rd leaf
+  triangle(leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3);
+  //2nd leaf
+  triangle(leaf2X1, leaf2Y1, leaf2X2, leaf2Y2, leaf2X3, leaf2Y3);
+  //1st leaf
+  triangle(leaf1X1, leaf1Y1, leaf1X2, leaf1Y2, leaf1X3, leaf1Y3);
 }

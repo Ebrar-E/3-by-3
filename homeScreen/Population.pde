@@ -100,31 +100,29 @@ void population() {
   //
   //orangeTreeShape
   //1st leaf
-  /*
-  leaf1X1 = width;
-  leaf1Y1 = height;
-  leaf1X2 = width;
-  leaf1Y2 = height;
-  leaf1X3 = width;
-  leaf1Y3 = height;
+  leaf1X1 = width*3.2/20;
+  leaf1Y1 = height*14.5/20;
+  leaf1X2 = width*1.5/20;
+  leaf1Y2 = height*16.3/20;
+  leaf1X3 = width*5.3/20;
+  leaf1Y3 = height*16.3/20;
   //2nd leaf
-  leaf2X1 = width;
-  leaf2Y1 = height;
-  leaf2X2 = width;
-  leaf2Y2 = height;
-  leaf2X3 = width;
-  leaf2Y3 = height;
+  leaf2X1 = width*3.2/20;
+  leaf2Y1 = height*15.5/20;
+  leaf2X2 = width*1.2/20;
+  leaf2Y2 = height*17/20;
+  leaf2X3 = width*5.5/20;
+  leaf2Y3 = height*17/20;
   //3rd leaf
-  leaf3X1 = width;
-  leaf3Y1 = height;
-  leaf3X2 = width;
-  leaf3Y2 = height;
-  leaf3X3 - width;
-  leaf3Y3 = height;
-  */
+  leaf3X1 = width*3.2/20;
+  leaf3Y1 = height*16/20;
+  leaf3X2 = width*1/20;
+  leaf3Y2 = height*18/20;
+  leaf3X3 = width*5.7/20;
+  leaf3Y3 = height*18/20;
   //the log
-  treeX = width*2.3/20;
-  treeY = height*10/12;
+  treeX = width*2.5/20;
+  treeY = height*10.5/12;
   treeWidth = width*1/12;
-  treeHeight = height*1/6;
+  treeHeight = height*1/7;
 }//end of population
