@@ -30,6 +30,11 @@ float picWidthRatio2, picHeightRatio2;
 PImage pic3;
 float picWidth3, picHeigh3;
 float picWidthRatio3, picHeightRatio3;
+//
+//
+Boolean star=false;
+float starx, stary, starradius1, starradius2; 
+int starnpoints;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -37,6 +42,7 @@ void setup() {
   size(500, 600);
   population();
   background(backgroundColor);
+  //
 }//end of setup
 
 void draw() {
@@ -79,18 +85,13 @@ void draw() {
   fill(reset);
   //
   hoverOver();
-
-  if (picOn1 == true) {
-    image(pic1, picWidth1, picHeigh1);
-  }
-  if (picOn2 == true) {
-    image(pic2, picWidth2, picHeigh2);
-  }
-  if (picOn3 == true) {
-    image(pic3, picWidth3, picHeigh3);
+  //
+  imageButtons();
+  
+  if ( star == true) {
+    moon();
   }
 }//end of draw
-
 
 
 void mousePressed() {
@@ -108,4 +109,8 @@ void mousePressed() {
     picOn3 = true;
   } 
   //shape buttons 
+  if ( mouseX>=butX2 && mouseX<=butX2+butWidth && mouseY>=butY2 && mouseY<=butY2+butHeight ) {
+    println("Activated Button 2");
+    star = true;
+  } 
 }//end of mousePressed
