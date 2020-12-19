@@ -65,6 +65,7 @@ void hoverOver() {
     fill(buttonColor);
     rect(butX8, butY8, butWidth, butHeight);
   }
+  
   //but9
   if ( mouseX>=butX9 && mouseX<=butX9+butWidth && mouseY>=butY9 && mouseY<=butY9+butHeight ) {
     fill(hoverColor);

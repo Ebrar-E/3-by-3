@@ -36,9 +36,10 @@ float picWidthRatio3, picHeightRatio3;
 //
 Boolean star=false;
 //
-float moonX, moonY, moonDiameter, holeDiameter;
-float holeX1, holeY1, holeX2, holeY2, holeX3, holeY3, holeX4, holeY4;
+float moonX, moonY, moonDiameter;
+float holeX1, holeY1, holeDiameter1, holeX2, holeY2, holeDiameter2, holeX3, holeY3, holeDiameter3, holeX4, holeY4, holeDiameter4;
 Boolean moon=false;
+color moonColor=#160F29, hole1Color=#382372, hole2Color=#4D368E, hole3Color=#CCBFF2, hole4Color=#B6A8DD, reset2=#FFB997;
 
 //all color credits should go to the color palette I used which is in Images
 

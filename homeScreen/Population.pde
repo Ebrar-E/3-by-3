@@ -78,21 +78,34 @@ void population() {
   //
   //purpleMoonShape
   
+  fill(moonColor);
   moonX = width*10/12;
   moonY = height*6/12;
+  moonDiameter = height*1/4;
+  fill(reset2);
   //
+  fill(hole1Color);
   holeX1 = width;
   holeY1 = height;
+  holeDiameter1 = height*1/20;
+  fill(reset2);
   //
+  fill(hole2Color);
   holeX2 = width;
   holeY2 = height;
+  holeDiameter2 = height*1/20;
+  fill(reset2);
   //
+  fill(hole3Color);
   holeX3 = width;
   holeY3 = height;
+  holeDiameter3 = height*1/20;
+  fill(reset2);
   //
+  fill(hole4Color);
   holeX4 = width;
   holeY4 = height;
+  holeDiameter4 = height*1/20;
+  fill(reset2);
   //
-  moonDiameter = height*1/5;
-  holeDiameter = rectHeight*1/6;
 }//end of population
