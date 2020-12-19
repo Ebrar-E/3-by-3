@@ -1,18 +1,19 @@
-void moon() {
+void starShape() {
+  color starColor=#007C8C;
   push();
-    translate(280, 290); // center of the star
-    fill(102);
+    translate(275, 285); // center of the star
+    fill(starColor);
     beginShape();
-    vertex(0, -200);
-    vertex(14, -20);
-    vertex(47, -15);
-    vertex(23, 7);
-    vertex(29, 40);
-    vertex(0, 25);
-    vertex(-29, 40);
-    vertex(-23, 7);
-    vertex(-47, -15);
-    vertex(-14, -20);
+    vertex(-23, -270); //1
+    vertex(-9, -225);
+    vertex(34, -215); //2
+    vertex(4, -193);
+    vertex(11, -140); //3
+    vertex(-23, -165);
+    vertex(-57, -140); //4
+    vertex(-52, -193);
+    vertex(-85, -215); //5
+    vertex(-37, -225);
     endShape(CLOSE);
     translate(100, 100);
     pop();

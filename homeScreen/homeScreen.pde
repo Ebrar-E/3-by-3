@@ -33,8 +33,7 @@ float picWidthRatio3, picHeightRatio3;
 //
 //
 Boolean star=false;
-float starx, stary, starradius1, starradius2; 
-int starnpoints;
+Boolean butOn2=false;
 
 //all color credits should go to the color palette I used which is in Images
 
@@ -89,7 +88,7 @@ void draw() {
   imageButtons();
   
   if ( star == true) {
-    moon();
+    starShape();
   }
 }//end of draw
 
@@ -112,5 +111,6 @@ void mousePressed() {
   if ( mouseX>=butX2 && mouseX<=butX2+butWidth && mouseY>=butY2 && mouseY<=butY2+butHeight ) {
     println("Activated Button 2");
     star = true;
+    butOn2 = false;
   } 
 }//end of mousePressed
