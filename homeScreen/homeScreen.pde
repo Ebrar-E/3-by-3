@@ -22,11 +22,15 @@ Boolean butOnX7=false, butOnY7=false, butOnX8=false, butOnY8=false, butOnX9=fals
 //
 PImage pic1;
 float picWidth1, picHeigh1;
-float picWidthRatio1 picHeightRatio1;
+float picWidthRatio1, picHeightRatio1;
 //
 PImage pic2;
 float picWidth2, picHeigh2;
-float picWidthRatio2 picHeightRatio2;
+float picWidthRatio2, picHeightRatio2;
+//
+PImage pic3;
+float picWidth3, picHeigh3;
+float picWidthRatio3, picHeightRatio3;
 
 //all color credits should go to the color palette I used which is in Images
 
